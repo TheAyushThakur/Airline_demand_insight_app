@@ -36,11 +36,12 @@ python flask_server.py
 By default, the API will be hosted at http://localhost:5000
 
 ### 6. API Endpoint
-POST /api/data (if running localy)
+POST /api/data 
+
 Request Format:
+
 json
 {
-
 }
 (This API generates the summary from precomputed route and trend data.)
 
@@ -51,5 +52,6 @@ json
   "trends": {...},
   "summary": "Top routes include ..."
 }
+
 ### 7. Run Streamlit App (If Added)
 streamlit run app.py

@@ -36,7 +36,7 @@ python flask_server.py
 By default, the API will be hosted at http://localhost:5000
 
 ### 6. API Endpoint
-POST /api/get_insights
+POST /api/data (if running localy)
 Request Format:
 json
 {

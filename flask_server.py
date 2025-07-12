@@ -2,7 +2,9 @@
 from flask import Flask, jsonify
 from scraper import fetch_airline_data
 from processor import process_data
-from ai_insights import generate_insight_summary
+from ai_insight import generate_insight_summary
+from dotenv import load_dotenv
+load_dotenv()
 app = Flask(__name__)
 
 @app.route('/api/data')

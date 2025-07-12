@@ -4,7 +4,9 @@ from scraper import fetch_airline_data
 from processor import process_data
 from ai_insight import generate_insight_summary
 from dotenv import load_dotenv
+import os
 load_dotenv()
+
 app = Flask(__name__)
 
 @app.route('/api/data')
@@ -27,5 +29,6 @@ def get_processed_data():
     }
     return jsonify(response)
 
-if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))  # Default to 5000 locally
+    app.run(host="0.0.0.0", port=port)

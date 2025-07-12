@@ -9,7 +9,7 @@ st.title("📈 Airline Booking Demand Dashboard")
 
 # Fetch data from Flask API
 with st.spinner("Loading data..."):
-    res = requests.get("http://localhost:5000/api/data")
+    res = requests.get("https://airline-demand-insight-app.onrender.com")
     data = res.json()
 
 # Show Popular Routes

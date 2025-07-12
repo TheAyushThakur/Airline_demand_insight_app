@@ -17,10 +17,10 @@ A lightweight web application that provides insights into airline route populari
 ## 🛠️ Setup Instructions
 
 ### 1. Clone the Repository
-git clone https://github.com/YOUR_USERNAME/airline-demand-app.git
+git clone https://github.com/TheAyushThakur/Airline_demand_insight_app
 cd airline-demand-app
 
-### 2. Create a Virtual Environment (Optional but Recommended)
+### 2. Create a Virtual Environment (Optional)
 python -m venv venv
 venv\Scripts\activate   # On Windows
  or
